@@ -1,8 +1,16 @@
 import React from 'react';
-import Header from '../components/header';
+import Navbar from '../components/navbar/Navbar';
+import Footer from '../components/footer/Footer';
 
-const Home = () => {
-	return <Header />;
+const App = () => {
+	return (
+		<div className='App'>
+			<div className='gradient__bg'>
+				<Navbar />
+			</div>
+			{/* <Footer /> */}
+		</div>
+	);
 };
 
-export default Home;
+export default App;
