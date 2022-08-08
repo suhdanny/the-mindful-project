@@ -1,0 +1,34 @@
+.header {
+	padding: 2rem 6rem;
+	margin: 4rem 6rem;
+	display: flex;
+}
+
+.headerContent {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin-right: 5rem;
+}
+
+.headerContent h1 {
+	font-weight: 800;
+	font-size: 50px;
+	line-height: 75px;
+}
+
+.headerContent p {
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 27px;
+	margin-top: 1.5rem;
+}
+
+.headerImageContainer {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
