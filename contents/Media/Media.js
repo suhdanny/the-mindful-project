@@ -6,13 +6,13 @@ const Media = () => {
 	return (
 		<div className={styles.mediaContainer}>
 			<a href='https://www.instagram.com/uoftthemindfulproject/' target='_blank' rel='noopener noreferrer'>
-				<FaInstagram size={35} style={{ cursor: 'pointer' }} />
+				<FaInstagram size={30} style={{ cursor: 'pointer' }} />
+			</a>
+			<a href='https://www.facebook.com/uoftthemindfulproject' target='_blank' rel='noopener noreferrer'>
+				<FaFacebookF size={30} style={{ cursor: 'pointer' }} />
 			</a>
 			<a href='https://www.linkedin.com/company/u-of-t-the-mindful-project/' target='_blank' rel='noopener noreferrer'>
-				<FaFacebookF size={35} style={{ cursor: 'pointer' }} />
-			</a>
-			<a href='https://www.linkedin.com/company/u-of-t-the-mindful-project/' target='_blank' rel='noopener noreferrer'>
-				<FaLinkedinIn size={35} style={{ cursor: 'pointer' }} />
+				<FaLinkedinIn size={30} style={{ cursor: 'pointer' }} />
 			</a>
 		</div>
 	);

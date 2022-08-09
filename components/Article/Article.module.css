@@ -1,0 +1,45 @@
+.article {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(250, 250, 250);
+}
+
+.articleImage {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.articleImage img {
+	width: 100%;
+	height: 100%;
+}
+
+.articleContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1rem 1.5rem;
+	height: 100%;
+}
+
+.articleContent p {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 35px;
+}
+
+.articleContent h3 {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 5rem;
+	cursor: pointer;
+}
+
+.articleContent p:last-child {
+	cursor: pointer;
+}

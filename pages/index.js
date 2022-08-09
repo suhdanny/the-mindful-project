@@ -1,7 +1,8 @@
 import React from 'react';
-import Media from '../components/Media/Media';
-import Navbar from '../components/Navbar/Navbar';
-import Header from '../components/Header/Header';
+import Media from '../contents/Media/Media';
+import Navbar from '../contents/Navbar/Navbar';
+import Header from '../contents/Header/Header';
+import Blog from '../contents/Blog/Blog';
 
 const App = () => {
 	return (
@@ -10,6 +11,7 @@ const App = () => {
 			<div className='gradient__bg'>
 				<Navbar />
 				<Header />
+				<Blog />
 			</div>
 		</div>
 	);

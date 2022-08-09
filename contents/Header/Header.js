@@ -9,10 +9,11 @@ const Header = () => {
 		<div className={styles.header} id='home'>
 			<div className={styles.headerContent}>
 				<h1>
-					{loremIpsum({
-						avgWordsPerSentence: 5,
-						avgSentencesPerParagraph: 1,
-					})}
+					We are
+					<br />
+					<span className={styles.highlight}>The Mindful Project</span>
+					<br />
+					at U of T
 				</h1>
 				<p>
 					{loremIpsum({
@@ -21,7 +22,7 @@ const Header = () => {
 					})}
 				</p>
 				<div className={styles.arrowDownIcon}>
-					<BsChevronCompactDown size={35} style={{ color: 'black' }} />
+					<BsChevronCompactDown size={30} style={{ color: 'black' }} />
 				</div>
 			</div>
 			<div className={styles.headerImageContainer}>

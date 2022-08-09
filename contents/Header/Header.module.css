@@ -15,8 +15,15 @@
 
 .headerContent h1 {
 	font-weight: 800;
-	font-size: 50px;
+	font-size: 40px;
 	line-height: 75px;
+}
+
+.headerContent h1 .highlight {
+	padding: 0.3rem 2rem;
+	background-color: black;
+	border-radius: 1rem;
+	color: white;
 }
 
 .headerContent p {
@@ -34,12 +41,12 @@
 }
 
 .arrowDownIcon {
-	border: 2px solid black;
+	border: 1.5px solid black;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 5px;
+	padding: 3px;
 	cursor: pointer;
 	margin-top: 2.2rem;
 }
