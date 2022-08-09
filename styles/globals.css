@@ -15,3 +15,7 @@ a {
 	color: unset;
 	text-decoration: none;
 }
+
+.App {
+	position: relative;
+}
