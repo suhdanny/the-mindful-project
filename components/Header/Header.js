@@ -21,7 +21,7 @@ const Header = () => {
 					})}
 				</p>
 				<div className={styles.arrowDownIcon}>
-					<BsChevronCompactDown size={35} style={{ color: 'blue' }} />
+					<BsChevronCompactDown size={35} style={{ color: 'black' }} />
 				</div>
 			</div>
 			<div className={styles.headerImageContainer}>
