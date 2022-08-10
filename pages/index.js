@@ -5,6 +5,7 @@ import Header from '../contents/Header/Header';
 import About from '../contents/About/About';
 import Blog from '../contents/Blog/Blog';
 import Team from '../contents/Team/Team';
+import Contact from '../contents/Contact/Contact';
 
 const App = () => {
 	return (
@@ -16,6 +17,7 @@ const App = () => {
 				<About />
 				<Blog />
 				<Team />
+				<Contact />
 			</div>
 		</div>
 	);
