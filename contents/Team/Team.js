@@ -4,7 +4,7 @@ import Member from '../../components/Member/Member';
 
 const Team = () => {
 	return (
-		<div className={styles.team}>
+		<div className={styles.team} id='team'>
 			<div className={styles.teamHeading}>
 				<h1>Meet the Team</h1>
 			</div>
