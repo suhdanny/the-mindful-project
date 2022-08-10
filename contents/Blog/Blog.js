@@ -1,6 +1,7 @@
 import React from 'react';
 import Article from '../../components/Article/Article';
 import styles from './Blog.module.css';
+import Fade from 'react-reveal/Fade';
 
 const Blog = () => {
 	return (
@@ -9,15 +10,19 @@ const Blog = () => {
 				<h1>learn more about neurodiversity</h1>
 			</div>
 			<div className={styles.blogContainer}>
-				<div className={styles.groupA}>
-					<Article date='Aug 9, 2022' title='Article Title' />
-				</div>
-				<div className={styles.groupB}>
-					<Article date='Aug 9, 2022' title='Article Title' />
-					<Article date='Aug 9, 2022' title='Article Title' />
-					<Article date='Aug 9, 2022' title='Article Title' />
-					<Article date='Aug 9, 2022' title='Article Title' />
-				</div>
+				<Fade>
+					<div className={styles.groupA}>
+						<Article date='Aug 9, 2022' title='Article Title' />
+					</div>
+				</Fade>
+				<Fade>
+					<div className={styles.groupB}>
+						<Article date='Aug 9, 2022' title='Article Title' />
+						<Article date='Aug 9, 2022' title='Article Title' />
+						<Article date='Aug 9, 2022' title='Article Title' />
+						<Article date='Aug 9, 2022' title='Article Title' />
+					</div>
+				</Fade>
 			</div>
 		</div>
 	);

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './About.module.css';
 import { loremIpsum } from 'react-lorem-ipsum';
+import Fade from 'react-reveal/Fade';
 
 const About = () => {
 	return (
@@ -15,28 +16,32 @@ const About = () => {
 				</p>
 			</div>
 			<div className={styles.aboutContent}>
-				<div className={styles.aboutSection}>
-					<div className={styles.aboutSectionHeader}>
-						<h1>Our Mission</h1>
+				<Fade>
+					<div className={styles.aboutSection}>
+						<div className={styles.aboutSectionHeader}>
+							<h1>Our Mission</h1>
+						</div>
+						<p>
+							{loremIpsum({
+								avgWordsPerSentence: 8,
+								avgSentencesPerParagraph: 4,
+							})}
+						</p>
 					</div>
-					<p>
-						{loremIpsum({
-							avgWordsPerSentence: 8,
-							avgSentencesPerParagraph: 4,
-						})}
-					</p>
-				</div>
-				<div className={styles.aboutSection}>
-					<div className={styles.aboutSectionHeader}>
-						<h1>Our Values</h1>
+				</Fade>
+				<Fade>
+					<div className={styles.aboutSection}>
+						<div className={styles.aboutSectionHeader}>
+							<h1>Our Values</h1>
+						</div>
+						<p>
+							{loremIpsum({
+								avgWordsPerSentence: 8,
+								avgSentencesPerParagraph: 4,
+							})}
+						</p>
 					</div>
-					<p>
-						{loremIpsum({
-							avgWordsPerSentence: 8,
-							avgSentencesPerParagraph: 4,
-						})}
-					</p>
-				</div>
+				</Fade>
 			</div>
 		</div>
 	);
