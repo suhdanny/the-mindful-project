@@ -11,8 +11,8 @@ const App = () => {
 	return (
 		<div className='App'>
 			<Media />
+			<Navbar />
 			<div className='gradient__bg'>
-				<Navbar />
 				<Header />
 				<About />
 				<Blog />
