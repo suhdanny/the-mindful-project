@@ -1,37 +1,26 @@
-.blog {
+.team {
 	padding: 2rem 6rem;
 	margin: 4rem 6rem;
 	display: flex;
 	flex-direction: column;
 }
 
-.blogHeading {
+.teamHeading {
 	width: 100%;
 	text-align: left;
 	margin-bottom: 5rem;
-	text-transform: capitalize;
 }
 
-.blogHeading h1 {
+.teamHeading h1 {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 40px;
 	line-height: 75px;
 }
 
-.blogContainer {
-	display: flex;
-	flex: 1;
-}
-
-.blogContainer .groupA {
-	flex: 0.75;
-	margin-right: 2rem;
-}
-
-.blogContainer .groupB {
+.membersContainer {
 	flex: 1;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	gap: 2rem;
 }

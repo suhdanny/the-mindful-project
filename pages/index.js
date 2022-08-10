@@ -3,6 +3,7 @@ import Media from '../contents/Media/Media';
 import Navbar from '../contents/Navbar/Navbar';
 import Header from '../contents/Header/Header';
 import Blog from '../contents/Blog/Blog';
+import Team from '../contents/Team/Team';
 
 const App = () => {
 	return (
@@ -12,6 +13,7 @@ const App = () => {
 				<Navbar />
 				<Header />
 				<Blog />
+				<Team />
 			</div>
 		</div>
 	);
