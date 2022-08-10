@@ -3,6 +3,7 @@ import styles from './Header.module.css';
 import Image from 'next/image';
 import { loremIpsum } from 'react-lorem-ipsum';
 import { BsChevronCompactDown } from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 const Header = () => {
 	return (
@@ -21,9 +22,11 @@ const Header = () => {
 						avgSentencesPerParagraph: 4,
 					})}
 				</p>
-				<div className={styles.arrowDownIcon}>
-					<BsChevronCompactDown size={30} style={{ color: '#FF3360' }} />
-				</div>
+				{/* <div className={styles.arrowDownIcon}>
+					<Link to='about' smooth={true} duration={500} spy={true} offset={-100}>
+						<BsChevronCompactDown size={30} style={{ color: '#FF3360' }} />
+					</Link>
+				</div> */}
 			</div>
 			<div className={styles.headerImageContainer}>
 				<Image className={styles.headerImage} src='/images/neuro.jpeg' alt='header' width={450} height={300} />
