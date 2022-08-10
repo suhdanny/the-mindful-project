@@ -15,8 +15,8 @@
 
 .headerContent h1 {
 	font-weight: 500;
-	font-size: 40px;
-	line-height: 75px;
+	font-size: 35px;
+	line-height: 65px;
 }
 
 .headerContent h1 .highlight {
@@ -28,7 +28,7 @@
 
 .headerContent p {
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 16px;
 	line-height: 27px;
 	margin-top: 1.5rem;
 }

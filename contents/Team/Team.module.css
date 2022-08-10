@@ -8,13 +8,13 @@
 .teamHeading {
 	width: 100%;
 	text-align: left;
-	margin-bottom: 5rem;
+	margin-bottom: 3rem;
 }
 
 .teamHeading h1 {
 	font-style: normal;
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 35px;
 	line-height: 75px;
 }
 
