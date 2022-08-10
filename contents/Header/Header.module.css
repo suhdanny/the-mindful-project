@@ -21,7 +21,7 @@
 
 .headerContent h1 .highlight {
 	padding: 0.3rem 2rem;
-	background-color: black;
+	background-color: #5468c2;
 	border-radius: 1rem;
 	color: white;
 }
@@ -41,7 +41,7 @@
 }
 
 .arrowDownIcon {
-	border: 1.5px solid black;
+	border: 1.5px solid #ff3360;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
