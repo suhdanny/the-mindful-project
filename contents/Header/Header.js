@@ -28,9 +28,7 @@ const Header = () => {
 					</Link>
 				</div> */}
 			</div>
-			<div className={styles.headerImageContainer}>
-				<Image className={styles.headerImage} src='/images/neuro.jpeg' alt='header' width={450} height={300} />
-			</div>
+			<div className={styles.headerImageContainer}>{/* <img src='/images/neuro.jpeg' /> */}</div>
 		</div>
 	);
 };

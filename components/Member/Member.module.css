@@ -1,12 +1,12 @@
 .member {
 	display: flex;
 	flex-direction: column;
-	transition: 0.2s ease;
+	/* transition: 0.2s ease; */
 }
-
+/* 
 .member:hover {
 	transform: scale(1.05);
-}
+} */
 
 .memberImage {
 	width: 100%;

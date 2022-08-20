@@ -16,7 +16,7 @@
 
 .headerContent h1 {
 	font-weight: 500;
-	font-size: 35px;
+	font-size: 40px;
 	line-height: 65px;
 }
 
@@ -36,9 +36,13 @@
 
 .headerImageContainer {
 	flex: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.headerImageContainer img {
+	width: 100%;
+	height: 100%;
 }
 
 .arrowDownIcon {
