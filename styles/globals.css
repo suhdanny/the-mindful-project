@@ -18,6 +18,7 @@ a {
 
 .App {
 	position: relative;
+	background-color: var(--theme-background);
 }
 
 #light {
