@@ -3,14 +3,14 @@ import emailjs from '@emailjs/browser';
 import styles from './Contact.module.css';
 
 const Contact = () => {
-	const form = useRef();
+	const form = useRef<HTMLFormElement>(null);
 	const [showMessage, setShowMessage] = useState(false);
 
 	const resetForm = () => {
-		document.getElementById('form').reset();
+		(document.getElementById('form') as HTMLFormElement).reset();
 	};
 
-	const sendEmail = async e => {
+	const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
 		try {

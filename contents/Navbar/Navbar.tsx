@@ -8,10 +8,10 @@ import { useTheme } from '../../contexts/ThemeContext';
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
-	const [isDarkMode, setDarkMode] = React.useState(false);
+	const [isDarkMode, setDarkMode] = useState(false);
 	const { theme, toggleTheme } = useTheme();
 
-	const toggleDarkMode = checked => {
+	const toggleDarkMode = (checked: boolean) => {
 		setDarkMode(checked);
 		toggleTheme();
 	};

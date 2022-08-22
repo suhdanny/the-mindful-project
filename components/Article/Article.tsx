@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Article.module.css';
 
 type ArticleProps = {
-	imgURL: string;
+	imgURL?: string;
 	date: string;
 	title: string;
 };

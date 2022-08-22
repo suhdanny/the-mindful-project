@@ -2,7 +2,13 @@ import React from 'react';
 import styles from './Member.module.css';
 import Fade from 'react-reveal/Fade';
 
-const Member = ({ name, position }) => {
+type MemberProps = {
+	imgURL?: string;
+	name: string;
+	position: string;
+};
+
+const Member = ({ imgURL, name, position }: MemberProps) => {
 	return (
 		<Fade>
 			<div className={styles.member}>
