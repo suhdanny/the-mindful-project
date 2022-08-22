@@ -30,7 +30,7 @@ const Navbar = () => {
 					<Menu />
 				</div>
 				<div className={styles.accessibilityContainer}>
-					<DarkModeSwitch checked={isDarkMode} onChange={toggleDarkMode} size={25} />
+					<DarkModeSwitch checked={isDarkMode} onChange={toggleDarkMode} size={25} moonColor='yellow' sunColor='orange' />
 				</div>
 				<div className={styles.navbarMenu}>
 					{toggleMenu ? (

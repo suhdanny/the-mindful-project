@@ -24,7 +24,7 @@ const Footer = () => {
 				</div>
 				<div className={styles.footerMenu}>
 					<p className={styles.footerMenuHeader}>Emails</p>
-					<p>uoftminfulproject@gmail.com</p>
+					<p>uoftthemindfulproject@gmail.com</p>
 				</div>
 			</div>
 			<div className={styles.footerCopyRight}>© University of Toronto The Mindful Project 2022</div>

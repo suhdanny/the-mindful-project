@@ -1,8 +1,13 @@
 import React from 'react';
 import styles from './Article.module.css';
-import Image from 'next/image';
 
-const Article = ({ imgURL, date, title }) => {
+type ArticleProps = {
+	imgURL: string;
+	date: string;
+	title: string;
+};
+
+const Article = ({ imgURL, date, title }: ArticleProps) => {
 	return (
 		<div className={styles.article}>
 			<div className={styles.articleImage}>
