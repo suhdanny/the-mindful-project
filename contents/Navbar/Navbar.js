@@ -2,37 +2,7 @@ import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 import Image from 'next/image';
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
-import { Link } from 'react-scroll';
-
-const Menu = () => {
-	return (
-		<>
-			<p>
-				<Link to='about' duration={500} spy={true} offset={-100}>
-					about us
-				</Link>
-			</p>
-			<p>
-				<a href='#'>what we do</a>
-			</p>
-			<p>
-				<Link to='blog' duration={500} spy={true} offset={-100}>
-					News Letter
-				</Link>
-			</p>
-			<p>
-				<Link to='team' duration={500} spy={true} offset={-100}>
-					meet the team
-				</Link>
-			</p>
-			<p>
-				<Link to='contact' duration={500} spy={true} offset={-100}>
-					contact us
-				</Link>
-			</p>
-		</>
-	);
-};
+import Menu from '../../components/Menu/Menu';
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);

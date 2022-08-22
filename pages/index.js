@@ -6,6 +6,7 @@ import About from '../contents/About/About';
 import Blog from '../contents/Blog/Blog';
 import Team from '../contents/Team/Team';
 import Contact from '../contents/Contact/Contact';
+import Footer from '../contents/Footer/Footer';
 
 const App = () => {
 	return (
@@ -17,8 +18,9 @@ const App = () => {
 				<About />
 				<Blog />
 				<Team />
-				<Contact />
+				{/* <Contact /> */}
 			</div>
+			<Footer />
 		</div>
 	);
 };
