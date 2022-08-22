@@ -23,6 +23,7 @@
 
 .footerLinks div:first-child {
 	text-align: left;
+	cursor: pointer;
 }
 
 .footerLinks div:last-child {

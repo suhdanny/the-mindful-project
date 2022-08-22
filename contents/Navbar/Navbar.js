@@ -3,9 +3,15 @@ import styles from './Navbar.module.css';
 import Image from 'next/image';
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
 import Menu from '../../components/Menu/Menu';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
+	const [isDarkMode, setDarkMode] = React.useState(false);
+
+	const toggleDarkMode = checked => {
+		setDarkMode(checked);
+	};
 
 	return (
 		<div className={styles.navbar}>
@@ -15,6 +21,9 @@ const Navbar = () => {
 				</div>
 				<div className={styles.navbarLinksContainer}>
 					<Menu />
+				</div>
+				<div className={styles.accessibilityContainer}>
+					<DarkModeSwitch checked={isDarkMode} onChange={toggleDarkMode} size={25} />
 				</div>
 				<div className={styles.navbarMenu}>
 					{toggleMenu ? (

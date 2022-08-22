@@ -23,7 +23,7 @@
 .headerContent h1 .highlight {
 	padding: 0.3rem 2rem;
 	background-color: #5468c2;
-	border-radius: 1rem;
+	/* border-radius: 1rem; */
 	color: white;
 }
 
