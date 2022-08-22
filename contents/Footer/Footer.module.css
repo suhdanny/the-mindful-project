@@ -1,9 +1,10 @@
 .footer {
 	padding: 3rem 12rem;
 	width: 100%;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+	box-shadow: var(--box-shadow);
 	display: flex;
 	flex-direction: column;
+	color: var(--theme-text);
 }
 
 .footerLinks {

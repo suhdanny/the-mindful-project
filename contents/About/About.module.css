@@ -15,6 +15,7 @@
 	font-weight: 500;
 	font-size: 40px;
 	line-height: 75px;
+	color: var(--theme-text);
 }
 
 .aboutText p {
@@ -24,6 +25,7 @@
 	font-size: 16px;
 	line-height: 27px;
 	margin-top: 1.5rem;
+	color: var(--theme-text);
 }
 
 .aboutContent {
@@ -58,4 +60,5 @@
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 27px;
+	color: var(--theme-text);
 }

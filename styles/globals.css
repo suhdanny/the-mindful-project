@@ -24,9 +24,11 @@ a {
 #light {
 	--theme-background: white;
 	--theme-text: black;
+	--box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
 }
 
 #dark {
 	--theme-background: black;
 	--theme-text: white;
+	--box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
 }

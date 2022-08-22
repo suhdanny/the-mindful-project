@@ -16,6 +16,7 @@
 	font-weight: 500;
 	font-size: 35px;
 	line-height: 75px;
+	color: var(--theme-text);
 }
 
 .membersContainer {

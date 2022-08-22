@@ -33,6 +33,7 @@
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 35px;
+	color: var(--theme-text);
 }
 
 .articleContent h3 {
@@ -42,6 +43,7 @@
 	line-height: 30px;
 	margin-bottom: 5rem;
 	cursor: pointer;
+	color: var(--theme-text);
 }
 
 .articleContent p:last-child {
