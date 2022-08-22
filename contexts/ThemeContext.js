@@ -9,11 +9,14 @@ export const ThemeProvider = ({ children }) => {
 
 	const toggleTheme = () => {
 		setTheme(curr => {
-			curr === 'light' ? 'dark' : 'light';
+			return curr === 'light' ? 'dark' : 'light';
 		});
 	};
 
+	console.log(theme);
+
 	const value = {
+		theme,
 		toggleTheme,
 	};
 

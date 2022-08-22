@@ -19,3 +19,13 @@ a {
 .App {
 	position: relative;
 }
+
+#light {
+	--theme-background: white;
+	--theme-text: black;
+}
+
+#dark {
+	--theme-background: black;
+	--theme-text: white;
+}

@@ -7,10 +7,13 @@ import Blog from '../contents/Blog/Blog';
 import Team from '../contents/Team/Team';
 import Contact from '../contents/Contact/Contact';
 import Footer from '../contents/Footer/Footer';
+import { useTheme } from '../contexts/ThemeContext';
 
 const App = () => {
+	const { theme } = useTheme();
+
 	return (
-		<div className='App'>
+		<div className='App' id={theme}>
 			<Media />
 			<Navbar />
 			<div className='gradient__bg'>

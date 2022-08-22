@@ -4,20 +4,27 @@ import Image from 'next/image';
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
 import Menu from '../../components/Menu/Menu';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import { useTheme } from '../../contexts/ThemeContext';
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
 	const [isDarkMode, setDarkMode] = React.useState(false);
+	const { theme, toggleTheme } = useTheme();
 
 	const toggleDarkMode = checked => {
 		setDarkMode(checked);
+		toggleTheme();
 	};
 
 	return (
 		<div className={styles.navbar}>
 			<div className={styles.navbarLinks}>
 				<div className={styles.navbarLogo}>
-					<Image src='/images/logo.png' alt='logo' height='75' width='75' />
+					{theme === 'light' ? (
+						<Image src='/images/logo.png' alt='logo' height='75' width='75' />
+					) : (
+						<Image src='/images/logo-dark.png' alt='logo' height='75' width='75' />
+					)}
 				</div>
 				<div className={styles.navbarLinksContainer}>
 					<Menu />
