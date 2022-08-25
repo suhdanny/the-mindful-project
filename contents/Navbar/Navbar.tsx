@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
 import Image from 'next/image';
 import { RiCloseLine, RiMenu3Line } from 'react-icons/ri';
@@ -9,12 +9,18 @@ import { useTheme } from '../../contexts/ThemeContext';
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
 	const { theme, toggleTheme } = useTheme();
-	const [isDarkMode, setDarkMode] = useState(theme === 'light' ? false : true);
+	const [isDarkMode, setDarkMode] = useState<boolean>(theme === 'light' ? false : true);
+
+	console.log(isDarkMode);
 
 	const toggleDarkMode = (checked: boolean) => {
 		setDarkMode(checked);
 		toggleTheme();
 	};
+
+	useEffect(() => {
+		setDarkMode(theme === 'light' ? false : true);
+	}, [theme]);
 
 	return (
 		<div className={styles.navbar}>
