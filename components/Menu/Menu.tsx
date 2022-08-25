@@ -9,7 +9,9 @@ const Menu = () => {
 				</Link>
 			</p>
 			<p>
-				<a href='#'>What We Do</a>
+				<Link to='work' duration={500} spy={true} offset={-100}>
+					What We Do
+				</Link>
 			</p>
 			{/* <p>
 				<Link to='blog' duration={500} spy={true} offset={-100}>

@@ -3,6 +3,32 @@
 :root {
 	--section-padding: 2rem 6rem;
 	--section-margin: 4rem 9rem;
+	--highlight-red-yellow: linear-gradient(
+		145deg,
+		hsl(39deg 100% 60%) 0%,
+		hsl(35deg 100% 61%) 11%,
+		hsl(31deg 100% 63%) 22%,
+		hsl(27deg 100% 64%) 33%,
+		hsl(22deg 100% 65%) 44%,
+		hsl(17deg 100% 66%) 56%,
+		hsl(11deg 100% 66%) 67%,
+		hsl(3deg 100% 67%) 78%,
+		hsl(355deg 100% 65%) 89%,
+		hsl(347deg 100% 60%) 100%
+	);
+	--highlight-blue-green: linear-gradient(
+		145deg,
+		hsl(229deg 47% 55%) 0%,
+		hsl(221deg 44% 53%) 11%,
+		hsl(213deg 41% 52%) 22%,
+		hsl(205deg 38% 51%) 33%,
+		hsl(195deg 34% 50%) 44%,
+		hsl(185deg 33% 49%) 56%,
+		hsl(174deg 33% 49%) 67%,
+		hsl(165deg 36% 51%) 78%,
+		hsl(157deg 41% 52%) 89%,
+		hsl(150deg 46% 54%) 100%
+	);
 }
 
 * {
@@ -29,22 +55,17 @@ a {
 .name-highlight {
 	display: inline-block;
 	font-weight: 800;
-	background-image: linear-gradient(
-		145deg,
-		hsl(39deg 100% 60%) 0%,
-		hsl(35deg 100% 61%) 11%,
-		hsl(31deg 100% 63%) 22%,
-		hsl(27deg 100% 64%) 33%,
-		hsl(22deg 100% 65%) 44%,
-		hsl(17deg 100% 66%) 56%,
-		hsl(11deg 100% 66%) 67%,
-		hsl(3deg 100% 67%) 78%,
-		hsl(355deg 100% 65%) 89%,
-		hsl(347deg 100% 60%) 100%
-	);
 	background-size: 100%;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.name-highlight.ry {
+	background-image: var(--highlight-red-yellow);
+}
+
+.name-highlight.bg {
+	background-image: var(--highlight-blue-green);
 }
 
 #light {

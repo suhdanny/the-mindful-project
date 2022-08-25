@@ -15,7 +15,7 @@ const Header = () => {
 					at University of Toronto
 				</h1>
 				<p>
-					<span className='name-highlight'>The Mindful Project</span> is a recognized club at the University of Toronto which aims to
+					<span className='name-highlight ry'>The Mindful Project</span> is a recognized club at the University of Toronto which aims to
 					increase awareness and acceptance of neurodivergence and educate others about the neurodiversity paradigm as a disability rights
 					movement.
 				</p>

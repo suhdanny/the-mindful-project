@@ -8,6 +8,7 @@ import Team from '../contents/Team/Team';
 import Contact from '../contents/Contact/Contact';
 import Footer from '../contents/Footer/Footer';
 import { useTheme } from '../contexts/ThemeContext';
+import Work from '../contents/Work/Work';
 
 const App = () => {
 	const { theme } = useTheme();
@@ -20,6 +21,7 @@ const App = () => {
 				<Header />
 				<About />
 				{/* <Blog /> */}
+				<Work />
 				<Team />
 				<Contact />
 			</div>
