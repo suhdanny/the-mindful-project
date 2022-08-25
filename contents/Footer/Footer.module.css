@@ -1,5 +1,6 @@
 .footer {
-	padding: 3rem 12rem;
+	padding: 3rem 15rem;
+	margin-top: 10rem;
 	width: 100%;
 	box-shadow: var(--box-shadow);
 	display: flex;

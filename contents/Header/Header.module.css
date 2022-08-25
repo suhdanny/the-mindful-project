@@ -1,6 +1,6 @@
 .header {
-	padding: 2rem 6rem;
-	margin: 4rem 6rem;
+	padding: var(--section-padding);
+	margin: var(--section-margin);
 	display: flex;
 	padding-top: 8rem;
 }
