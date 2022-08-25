@@ -1,0 +1,16 @@
+export const members = [
+	{ name: 'Sion Park', position: 'President', imgURL: '' },
+	{ name: 'Monica Kim', position: 'Vice President', imgURL: '' },
+	{ name: 'Delphine Li', position: 'Vice President', imgURL: '' },
+	{ name: 'Mathew Yu', position: 'Secretary', imgURL: '' },
+	{ name: 'John Nam', position: 'Treasurer', imgURL: '' },
+	{ name: 'Vicky Nguyen', position: 'Social Media Director', imgURL: '' },
+	{ name: 'Audrey Lee', position: 'Event Director', imgURL: '' },
+	{ name: 'Katrina Lee', position: 'Event Director', imgURL: '' },
+	{ name: 'Selina Jang', position: 'Event Director', imgURL: '' },
+	{ name: 'Bianca Yuen', position: 'External Affairs Director', imgURL: '' },
+	{ name: 'Grace Deol', position: 'External Affairs Director', imgURL: '' },
+	{ name: 'Valeria Khudiakova', position: 'Inclusivity Research Director', imgURL: '' },
+	{ name: 'Porsha Taheri', position: 'Inclusivity Research Director', imgURL: '' },
+	{ name: 'Danny Suh', position: 'Web Developer & Administrator', imgURL: '' },
+];
