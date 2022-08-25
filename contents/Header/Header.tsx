@@ -12,16 +12,16 @@ const Header = () => {
 					<br />
 					<span className={styles.highlight}>The Mindful Project</span>
 					<br />
-					at U of T
+					at University of Toronto
 				</h1>
 				<p>
-					{loremIpsum({
-						avgWordsPerSentence: 8,
-						avgSentencesPerParagraph: 4,
-					})}
+					The Mindful Project is a recognized club at the University of Toronto which aims to increase awareness and acceptance of
+					neurodivergence and educate others about the neurodiversity paradigm as a disability rights movement.
 				</p>
 			</div>
-			<div className={styles.headerImageContainer}>{/* <img src='/images/neuro.jpeg' /> */}</div>
+			<div className={styles.headerImageContainer}>
+				<img src='/images/graphic-red-1.svg' />
+			</div>
 		</div>
 	);
 };
