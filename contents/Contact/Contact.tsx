@@ -59,13 +59,15 @@ const Contact = () => {
 			<div className={styles.contactContent}>
 				<form ref={form} onSubmit={sendEmail} className={styles.contactForm} id='form'>
 					{showMessage && <p>Your message has been sent!</p>}
-					<label>Name</label>
+					<label>Your name*</label>
 					<input type='text' name='user_name' required />
-					<label>Email</label>
+					<label>Your email*</label>
 					<input type='email' name='user_email' required />
-					<label>Message</label>
+					<label>Your message*</label>
 					<textarea name='message' required />
-					<input type='submit' value='Send' />
+					<button type='submit' className={styles.submitButton}>
+						<span className={styles.buttonFront}>Send us your message!</span>
+					</button>
 				</form>
 				<div className={styles.contactMap}>
 					<div className={styles.googleMap} ref={googleMap} />
