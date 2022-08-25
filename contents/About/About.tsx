@@ -10,8 +10,9 @@ const About = () => {
 				<h1>About Us</h1>
 				<div className={styles.aboutTextContainer}>
 					<p>
-						The Mindful Project is a recognized club at the University of Toronto which aims to increase awareness and acceptance of
-						neurodivergence and educate others about the neurodiversity paradigm as a disability rights movement.
+						<span className='name-highlight'>The Mindful Project</span> is a recognized club at the University of Toronto which aims to
+						increase awareness and acceptance of neurodivergence and educate others about the neurodiversity paradigm as a disability
+						rights movement.
 					</p>
 					<div className={styles.aboutImage}>
 						<img src='/images/about-graphic-yellow.svg' alt='' />
