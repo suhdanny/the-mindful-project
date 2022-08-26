@@ -89,6 +89,6 @@ a {
 .stroke-svg {
 	position: absolute;
 	left: 0px;
-	bottom: -10px;
+	/* bottom: -10px; */
 	min-width: calc(100% + 0px + 2px);
 }

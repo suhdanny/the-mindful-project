@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Header.module.css';
-import UnderlineSVG from '../../components/UnderlineSVG/UnderlineSVG';
+import RandomUnderline from '../../components/RandomUnderline/RandomUnderline';
 
 const Header = () => {
 	return (
@@ -15,7 +15,7 @@ const Header = () => {
 				</h1>
 				<p>
 					<span className='name-highlight ry'>The Mindful Project</span> is a recognized club at the University of Toronto which aims to
-					increase awareness and acceptance of <UnderlineSVG word='neurodiversity' color='#FF3360' /> and educate others about the
+					increase awareness and acceptance of <RandomUnderline word='neurodiversity' color='#FF3360' /> and educate others about the
 					neurodiversity paradigm as a disability rights movement.
 				</p>
 			</div>

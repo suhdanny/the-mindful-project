@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './About.module.css';
 import Fade from 'react-reveal/Fade';
-import UnderlineSVG from '../../components/UnderlineSVG/UnderlineSVG';
+import RandomUnderline from '../../components/RandomUnderline/RandomUnderline';
 
 const About = () => {
 	return (
@@ -12,8 +12,8 @@ const About = () => {
 					<p>
 						<span className='name-highlight bg'>Neurodivergent</span> individuals are those with developmental, thinking, and learning
 						differences compared to the “neurotypical” population. Neurodivergent individuals often face{' '}
-						<UnderlineSVG word='arriers and stigma' color='#5468C2' />, whether this is{' '}
-						<UnderlineSVG word='socially or academically' color='#FFB833' />. The Mindful Project is one of the few organizations that
+						<RandomUnderline word='arriers and stigma' color='#5468C2' />, whether this is{' '}
+						<RandomUnderline word='socially or academically' color='#FFB833' />. The Mindful Project is one of the few organizations that
 						address these topics through workshops, events and fundraising.
 					</p>
 					<div className={styles.aboutImage}>
