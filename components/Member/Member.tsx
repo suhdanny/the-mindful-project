@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Member.module.css';
 import Fade from 'react-reveal/Fade';
 

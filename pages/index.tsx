@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Media from '../contents/Media/Media';
 import Navbar from '../contents/Navbar/Navbar';
 import Header from '../contents/Header/Header';
@@ -26,6 +26,7 @@ const App = () => {
 				<Contact />
 			</div>
 			<Footer />
+			<div id='modal'></div>
 		</div>
 	);
 };
