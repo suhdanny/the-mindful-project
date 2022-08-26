@@ -68,3 +68,9 @@
 	line-height: 27px;
 	color: var(--theme-text);
 }
+
+.aboutSection p br {
+	content: '';
+	display: block;
+	margin-top: 1rem;
+}

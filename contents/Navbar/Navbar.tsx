@@ -11,8 +11,6 @@ const Navbar = () => {
 	const { theme, toggleTheme } = useTheme();
 	const [isDarkMode, setDarkMode] = useState<boolean>(theme === 'light' ? false : true);
 
-	console.log(isDarkMode);
-
 	const toggleDarkMode = (checked: boolean) => {
 		setDarkMode(checked);
 		toggleTheme();

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Header.module.css';
-import Image from 'next/image';
-import { loremIpsum } from 'react-lorem-ipsum';
+import UnderlineSVG from '../../components/UnderlineSVG/UnderlineSVG';
 
 const Header = () => {
 	return (
@@ -16,8 +15,8 @@ const Header = () => {
 				</h1>
 				<p>
 					<span className='name-highlight ry'>The Mindful Project</span> is a recognized club at the University of Toronto which aims to
-					increase awareness and acceptance of neurodivergence and educate others about the neurodiversity paradigm as a disability rights
-					movement.
+					increase awareness and acceptance of <UnderlineSVG word='neurodiversity' color='#FF3360' /> and educate others about the
+					neurodiversity paradigm as a disability rights movement.
 				</p>
 			</div>
 			<div className={styles.headerImageContainer}>
@@ -28,3 +27,5 @@ const Header = () => {
 };
 
 export default Header;
+
+//<span className='stroke-container'><a ref={spanRef}>random line</a> {createSVG(spanWidth, 'black')}</span>
