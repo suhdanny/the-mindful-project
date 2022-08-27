@@ -7,6 +7,21 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from '../../contexts/ThemeContext';
 import { motion } from 'framer-motion';
 
+const leftVariants = {
+	initial: { opacity: 0, x: -30 },
+	animate: { opacity: 1, x: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
+};
+
+const topVariants = {
+	initial: { opacity: 0, y: -30 },
+	animate: { opacity: 1, y: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
+};
+
+const rightVariants = {
+	initial: { opacity: 0, x: 30 },
+	animate: { opacity: 1, x: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
+};
+
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
 	const { theme, toggleTheme } = useTheme();
@@ -24,29 +39,17 @@ const Navbar = () => {
 	return (
 		<div className={styles.navbar}>
 			<div className={styles.navbarLinks}>
-				<motion.div
-					className={styles.navbarLogo}
-					initial={{ opacity: 0, x: -30 }}
-					animate={{ opacity: 1, x: 0 }}
-					transition={{ duration: 0.3 }}>
+				<motion.div className={styles.navbarLogo} variants={leftVariants} initial='initial' animate='animate'>
 					{theme === 'light' ? (
 						<Image src='/images/logo.png' alt='logo' height='75' width='75' />
 					) : (
 						<Image src='/images/logo-dark.png' alt='logo' height='75' width='75' />
 					)}
 				</motion.div>
-				<motion.div
-					className={styles.navbarLinksContainer}
-					initial={{ opacity: 0, y: -30 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ delay: 0.1, duration: 0.3 }}>
+				<motion.div className={styles.navbarLinksContainer} variants={topVariants} initial='initial' animate='animate'>
 					<Menu />
 				</motion.div>
-				<motion.div
-					className={styles.accessibilityContainer}
-					initial={{ opacity: 0, x: 30 }}
-					animate={{ opacity: 1, x: 0 }}
-					transition={{ delay: 0.2, duration: 0.3 }}>
+				<motion.div className={styles.accessibilityContainer} variants={rightVariants} initial='initial' animate='animate'>
 					<DarkModeSwitch checked={isDarkMode} onChange={toggleDarkMode} size={25} moonColor='yellow' sunColor='orange' />
 				</motion.div>
 				<div className={styles.navbarMenu}>

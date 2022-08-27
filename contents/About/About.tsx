@@ -1,27 +1,48 @@
 import React from 'react';
 import styles from './About.module.css';
 import RandomUnderline from '../../components/RandomUnderline/RandomUnderline';
+import { motion } from 'framer-motion';
+
+const upperLeftVariants = {
+	initial: { opacity: 0, x: -30, y: -30 },
+	animate: { opacity: 1, x: 0, y: 0, transition: { delay: 0.3, duration: 0.2, type: 'spring', stiffness: 200 } },
+};
+
+const upperRightVariants = {
+	initial: { opacity: 0, x: 30, y: 30 },
+	animate: { opacity: 1, x: 0, y: 0, transition: { delay: 0.3, duration: 0.2, type: 'spring', stiffness: 200 } },
+};
+
+const bottomRightVariants = {
+	initial: { opacity: 0, x: 30, y: 30 },
+	animate: { opacity: 1, x: 0, y: 0, transition: { delay: 0.6, duration: 0.2, type: 'spring', stiffness: 200 } },
+};
+
+const bottomLeftVariants = {
+	initial: { opacity: 0, x: -30, y: 30 },
+	animate: { opacity: 1, x: 0, y: 0, transition: { delay: 0.6, duration: 0.2, type: 'spring', stiffness: 200 } },
+};
 
 const About = () => {
 	return (
 		<div className={styles.about} id='about'>
 			<div className={styles.aboutText}>
 				<h1>About Us</h1>
-				<div className={styles.aboutTextContainer}>
-					<p>
+				<motion.div className={styles.aboutTextContainer} initial='initial' whileInView='animate' viewport={{ once: true }}>
+					<motion.p variants={upperLeftVariants}>
 						<span className='name-highlight bg'>Neurodivergent</span> individuals are those with developmental, thinking, and learning
 						differences compared to the “neurotypical” population. Neurodivergent individuals often face{' '}
 						<RandomUnderline word='arriers and stigma' color='#5468C2' />, whether this is{' '}
 						<RandomUnderline word='socially or academically' color='#FFB833' />. The Mindful Project is one of the few organizations that
 						address these topics through workshops, events and fundraising.
-					</p>
-					<div className={styles.aboutImage}>
+					</motion.p>
+					<motion.div className={styles.aboutImage} variants={upperRightVariants}>
 						<img src='/images/about-graphic-yellow.svg' alt='' />
-					</div>
-				</div>
+					</motion.div>
+				</motion.div>
 			</div>
-			<div className={styles.aboutContent}>
-				<div className={styles.aboutSection}>
+			<motion.div className={styles.aboutContent} initial='initial' whileInView='animate' viewport={{ once: true }}>
+				<motion.div className={styles.aboutSection} variants={bottomLeftVariants}>
 					<div className={styles.aboutSectionHeader}>
 						<h1>Our Mission</h1>
 					</div>
@@ -31,9 +52,9 @@ const About = () => {
 						focuses on reducing the stigma of disabilities and disorders through workshops, various events, and fundraising to raise
 						awareness and monetary donations to recognized organizations.
 					</p>
-				</div>
+				</motion.div>
 
-				<div className={styles.aboutSection}>
+				<motion.div className={styles.aboutSection} variants={bottomRightVariants}>
 					<div className={styles.aboutSectionHeader}>
 						<h1>Our Values</h1>
 					</div>
@@ -42,8 +63,8 @@ const About = () => {
 						that the neurodivergent community faces and acquire valuable skills. The Mindful Project team seeks to provide growth
 						opportunities both for its members.
 					</p>
-				</div>
-			</div>
+				</motion.div>
+			</motion.div>
 		</div>
 	);
 };
