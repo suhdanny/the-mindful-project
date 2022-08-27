@@ -74,3 +74,61 @@
 	display: block;
 	margin-top: 1rem;
 }
+
+@media screen and (max-width: 1050px) {
+	.aboutText {
+		align-items: center;
+	}
+
+	.aboutTextContainer {
+		flex-direction: column;
+	}
+
+	.aboutTextContainer p {
+		text-align: center;
+	}
+
+	.aboutImage img {
+		width: 400px;
+		height: 400px;
+	}
+
+	.aboutContent {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.aboutText h1 {
+		font-size: 30px;
+	}
+
+	.aboutTextContainer p,
+	.aboutSection p {
+		font-size: 12px;
+	}
+
+	.aboutSectionHeader h1 {
+		font-size: 20px;
+	}
+
+	.aboutImage img {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.aboutText h1 {
+		font-size: 25px;
+	}
+
+	.aboutTextContainer p,
+	.aboutSection p {
+		font-size: 10px;
+	}
+
+	.aboutSectionHeader h1 {
+		font-size: 18px;
+	}
+}

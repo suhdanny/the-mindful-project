@@ -15,7 +15,7 @@ const upperRightVariants = {
 
 const bottomRightVariants = {
 	initial: { opacity: 0, x: 30, y: 30 },
-	animate: { opacity: 1, x: 0, y: 0, transition: { delay: 0.3, duration: 0.2, type: 'spring', stiffness: 200 } },
+	animate: { opacity: 1, x: 0, y: 0, transition: { delay: 0, duration: 0.2, type: 'spring', stiffness: 200 } },
 };
 
 const bottomLeftVariants = {
@@ -32,7 +32,7 @@ const About = () => {
 					<motion.p variants={upperLeftVariants}>
 						<span className='name-highlight bg'>Neurodivergent</span> individuals are those with developmental, thinking, and learning
 						differences compared to the “neurotypical” population. Neurodivergent individuals often face{' '}
-						<RandomUnderline word='arriers and stigma' color='#5468C2' />, whether this is{' '}
+						<RandomUnderline word='barriers and stigma' color='#5468C2' />, whether this is{' '}
 						<RandomUnderline word='socially or academically' color='#FFB833' />. The Mindful Project is one of the few organizations that
 						address these topics through workshops, events and fundraising.
 					</motion.p>

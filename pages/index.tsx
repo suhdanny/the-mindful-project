@@ -19,7 +19,7 @@ const App = () => {
 			<Navbar />
 			<div className='gradient__bg' style={{ width: '100%' }}>
 				<Header />
-				{/* <About /> */}
+				<About />
 				{/* <Blog /> */}
 				{/* <Work />
 				<Team />
