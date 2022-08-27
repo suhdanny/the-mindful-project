@@ -18,20 +18,19 @@
 
 .headerContent h1 {
 	font-weight: 500;
-	font-size: 40px;
+	font-size: var(--section-header-font-size);
 	line-height: 65px;
 }
 
 .headerContent h1 .highlight {
 	padding: 0.3rem 2rem;
 	background-color: #5468c2;
-	/* border-radius: 1rem; */
 	color: white;
 }
 
 .headerContent p {
 	font-weight: normal;
-	font-size: 16px;
+	font-size: var(--section-paragraph-font-size);
 	line-height: 27px;
 	margin-top: 1.5rem;
 	word-wrap: break-word;
@@ -78,26 +77,12 @@
 }
 
 @media screen and (max-width: 650px) {
-	.headerContent h1 {
-		font-size: 30px;
-	}
-
-	.headerContent p {
-		font-size: 12px;
-	}
-
 	.headerImageContainer img {
 		width: 300px;
 		height: 300px;
 	}
 }
 
-@media screen and (max-width: 490px) {
-	.headerContent h1 {
-		font-size: 25px;
-	}
+/* @media screen and (max-width: 490px) {
 
-	.headerContent p {
-		font-size: 10px;
-	}
-}
+} */

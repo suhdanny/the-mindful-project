@@ -4,6 +4,9 @@
 :root {
 	--section-padding: 2rem 6rem;
 	--section-margin: 4rem 9rem;
+	--section-header-font-size: 40px;
+	--section-subheader-font-size: 24px;
+	--section-paragraph-font-size: 16px;
 	--highlight-red-yellow: linear-gradient(
 		145deg,
 		hsl(39deg 100% 60%) 0%,
@@ -99,12 +102,19 @@ a {
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
+	:root {
+		--section-margin: 0 0 2rem;
+		--section-header-font-size: 30px;
+		--section-subheader-font-size: 20px;
+	}
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 490px) {
 	:root {
-		--section-padding: 1rem 1rem;
-		--section-margin: 2rem 1rem;
+		--section-padding: 2rem;
+		--section-margin: 0 0 1rem;
+		--section-header-font-size: 25px;
+		--section-subheader-font-size: 18px;
 	}
 }

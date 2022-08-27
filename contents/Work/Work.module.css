@@ -7,7 +7,7 @@
 
 .work h1 {
 	font-weight: 500;
-	font-size: 40px;
+	font-size: var(--section-header-font-size);
 	line-height: 75px;
 	color: var(--theme-text);
 }
@@ -42,6 +42,7 @@
 }
 
 .whatWeDoTextContainer h3 {
+	font-size: var(--section-subheader-font-size);
 	color: var(--theme-text);
 	text-align: center;
 }
@@ -49,6 +50,37 @@
 .whatWeDoTextContainer p {
 	color: var(--theme-text);
 	font-weight: normal;
-	font-size: 16px;
+	font-size: var(--section-paragraph-font-size);
 	line-height: 27px;
+}
+
+@media screen and (max-width: 1050px) {
+	.work {
+		align-items: center;
+	}
+
+	.whatWeDo {
+		flex-direction: column;
+	}
+
+	.whatWeDoImageContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.whatWeDoImageContainer img {
+		width: 400px;
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.whatWeDoImageContainer img {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 490px) {
 }
