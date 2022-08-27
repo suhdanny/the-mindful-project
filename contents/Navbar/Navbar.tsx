@@ -38,21 +38,21 @@ const Navbar = () => {
 
 	return (
 		<div className={styles.navbar}>
-			<div className={styles.navbarLinks}>
-				<motion.div className={styles.navbarLogo} variants={leftVariants} initial='initial' animate='animate'>
+			<motion.div className={styles.navbarLinks} initial='initial' animate='animate'>
+				<motion.div className={styles.navbarLogo} variants={leftVariants}>
 					{theme === 'light' ? (
 						<Image src='/images/logo.png' alt='logo' height='75' width='75' />
 					) : (
 						<Image src='/images/logo-dark.png' alt='logo' height='75' width='75' />
 					)}
 				</motion.div>
-				<motion.div className={styles.navbarLinksContainer} variants={topVariants} initial='initial' animate='animate'>
+				<motion.div className={styles.navbarLinksContainer} variants={topVariants}>
 					<Menu />
 				</motion.div>
-				<motion.div className={styles.accessibilityContainer} variants={rightVariants} initial='initial' animate='animate'>
+				<motion.div className={styles.accessibilityContainer} variants={rightVariants}>
 					<DarkModeSwitch checked={isDarkMode} onChange={toggleDarkMode} size={25} moonColor='yellow' sunColor='orange' />
 				</motion.div>
-				<div className={styles.navbarMenu}>
+				<motion.div className={styles.navbarMenu} variants={rightVariants}>
 					{toggleMenu ? (
 						<RiCloseLine size={27} onClick={() => setToggleMenu(false)} />
 					) : (
@@ -65,8 +65,8 @@ const Navbar = () => {
 							</div>
 						</div>
 					)}
-				</div>
-			</div>
+				</motion.div>
+			</motion.div>
 		</div>
 	);
 };

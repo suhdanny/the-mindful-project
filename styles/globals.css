@@ -92,3 +92,20 @@ a {
 	/* bottom: -10px; */
 	min-width: calc(100% + 0px + 2px);
 }
+
+@media screen and (max-width: 1050px) {
+	:root {
+		--section-padding: 2rem 6rem;
+		--section-margin: 0 0 3rem;
+	}
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 550px) {
+	:root {
+		--section-padding: 1rem 1rem;
+		--section-margin: 2rem 1rem;
+	}
+}

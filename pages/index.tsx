@@ -17,15 +17,15 @@ const App = () => {
 		<div className='App' id={theme}>
 			<Media />
 			<Navbar />
-			<div className='gradient__bg'>
+			<div className='gradient__bg' style={{ width: '100%' }}>
 				<Header />
-				<About />
+				{/* <About /> */}
 				{/* <Blog /> */}
-				<Work />
+				{/* <Work />
 				<Team />
-				<Contact />
+				<Contact /> */}
 			</div>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 };

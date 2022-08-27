@@ -15,12 +15,12 @@ const upperRightVariants = {
 
 const bottomRightVariants = {
 	initial: { opacity: 0, x: 30, y: 30 },
-	animate: { opacity: 1, x: 0, y: 0, transition: { delay: 0.6, duration: 0.2, type: 'spring', stiffness: 200 } },
+	animate: { opacity: 1, x: 0, y: 0, transition: { delay: 0.3, duration: 0.2, type: 'spring', stiffness: 200 } },
 };
 
 const bottomLeftVariants = {
 	initial: { opacity: 0, x: -30, y: 30 },
-	animate: { opacity: 1, x: 0, y: 0, transition: { delay: 0.6, duration: 0.2, type: 'spring', stiffness: 200 } },
+	animate: { opacity: 1, x: 0, y: 0, transition: { delay: 0, duration: 0.2, type: 'spring', stiffness: 200 } },
 };
 
 const About = () => {

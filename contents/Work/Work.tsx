@@ -5,12 +5,12 @@ import { motion } from 'framer-motion';
 
 const leftVariants = {
 	initial: { opacity: 0, x: -200 },
-	animate: { opacity: 1, x: 0, transition: { delay: 0.6, duration: 0.2, type: 'spring', stiffness: 200 } },
+	animate: { opacity: 1, x: 0, transition: { duration: 0.4 } },
 };
 
 const rightVariants = {
 	initial: { opacity: 0, x: 200 },
-	animate: { opacity: 1, x: 0, transition: { delay: 0.6, duration: 0.2, type: 'spring', stiffness: 200 } },
+	animate: { opacity: 1, x: 0, transition: { duration: 0.4 } },
 };
 
 const Work = () => {
