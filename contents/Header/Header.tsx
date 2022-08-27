@@ -7,7 +7,7 @@ const Header = () => {
 	return (
 		<div className={styles.header} id='home'>
 			<div className={styles.headerContent}>
-				<motion.h1 initial={{ opacity: 0, x: -30, y: -30 }} animate={{ opacity: 1, x: 0, y: 0 }} transition={{ delay: 0.2, duration: 0.3 }}>
+				<motion.h1 initial={{ opacity: 0, x: -30, y: -30 }} animate={{ opacity: 1, x: 0, y: 0 }} transition={{ delay: 0.3, duration: 0.3 }}>
 					We are
 					<br />
 					<span className={styles.highlight}>The Mindful Project</span>
@@ -24,7 +24,7 @@ const Header = () => {
 				className={styles.headerImageContainer}
 				initial={{ opacity: 0, x: 30, y: 30 }}
 				animate={{ opacity: 1, x: 0, y: 0 }}
-				transition={{ delay: 0.2, duration: 0.3 }}>
+				transition={{ delay: 0.3, duration: 0.3 }}>
 				<img src='/images/graphic-red-1.svg' />
 			</motion.div>
 		</div>
