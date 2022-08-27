@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './About.module.css';
-import Fade from 'react-reveal/Fade';
 import RandomUnderline from '../../components/RandomUnderline/RandomUnderline';
 
 const About = () => {
@@ -22,31 +21,28 @@ const About = () => {
 				</div>
 			</div>
 			<div className={styles.aboutContent}>
-				<Fade>
-					<div className={styles.aboutSection}>
-						<div className={styles.aboutSectionHeader}>
-							<h1>Our Mission</h1>
-						</div>
-						<p>
-							This club reinforces the idea that differences are normal and that everyone should be offered the same opportunities in
-							education and everyday life, thus advocating for inclusivity and accessibility at the University of Toronto. <br /> The
-							club focuses on reducing the stigma of disabilities and disorders through workshops, various events, and fundraising to
-							raise awareness and monetary donations to recognized organizations.
-						</p>
+				<div className={styles.aboutSection}>
+					<div className={styles.aboutSectionHeader}>
+						<h1>Our Mission</h1>
 					</div>
-				</Fade>
-				<Fade>
-					<div className={styles.aboutSection}>
-						<div className={styles.aboutSectionHeader}>
-							<h1>Our Values</h1>
-						</div>
-						<p>
-							This club hopes to provide various opportunities for fellow University of Toronto students to learn more about the
-							challenges that the neurodivergent community faces and acquire valuable skills. The Mindful Project team seeks to provide
-							growth opportunities both for its members.
-						</p>
+					<p>
+						This club reinforces the idea that differences are normal and that everyone should be offered the same opportunities in
+						education and everyday life, thus advocating for inclusivity and accessibility at the University of Toronto. <br /> The club
+						focuses on reducing the stigma of disabilities and disorders through workshops, various events, and fundraising to raise
+						awareness and monetary donations to recognized organizations.
+					</p>
+				</div>
+
+				<div className={styles.aboutSection}>
+					<div className={styles.aboutSectionHeader}>
+						<h1>Our Values</h1>
 					</div>
-				</Fade>
+					<p>
+						This club hopes to provide various opportunities for fellow University of Toronto students to learn more about the challenges
+						that the neurodivergent community faces and acquire valuable skills. The Mindful Project team seeks to provide growth
+						opportunities both for its members.
+					</p>
+				</div>
 			</div>
 		</div>
 	);

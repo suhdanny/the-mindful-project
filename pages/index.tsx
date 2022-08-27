@@ -26,7 +26,6 @@ const App = () => {
 				<Contact />
 			</div>
 			<Footer />
-			<div id='modal'></div>
 		</div>
 	);
 };
