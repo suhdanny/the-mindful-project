@@ -54,7 +54,11 @@ const Navbar = () => {
 				</motion.div>
 				<motion.div className={styles.navbarMenu} variants={rightVariants}>
 					{toggleMenu ? (
-						<RiCloseLine size={27} onClick={() => setToggleMenu(false)} />
+						theme === 'light' ? (
+							<RiCloseLine size={27} onClick={() => setToggleMenu(false)} color='black' />
+						) : (
+							<RiCloseLine size={27} onClick={() => setToggleMenu(false)} color='white' />
+						)
 					) : (
 						<RiMenu3Line size={27} onClick={() => setToggleMenu(true)} />
 					)}
