@@ -48,7 +48,14 @@ const Navbar = () => {
 					<Menu />
 				</motion.div>
 				<motion.div className={styles.accessibilityContainer} variants={rightVariants}>
-					<DarkModeSwitch checked={isDarkMode} onChange={toggleDarkMode} size={25} moonColor='yellow' sunColor='orange' />
+					<DarkModeSwitch
+						checked={isDarkMode}
+						onChange={toggleDarkMode}
+						size={25}
+						moonColor='yellow'
+						sunColor='orange'
+						style={{ marginLeft: '10px' }}
+					/>
 				</motion.div>
 				<motion.div className={styles.navbarMenu} variants={rightVariants}>
 					{toggleMenu ? (
