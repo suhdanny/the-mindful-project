@@ -1,17 +1,6 @@
 import React from 'react';
 import styles from './Work.module.css';
 import SquigglyUnderline from '../../components/SquigglyUnderline/SquigglyUnderline';
-import { motion } from 'framer-motion';
-
-const leftVariants = {
-	initial: { opacity: 0, x: -200 },
-	animate: { opacity: 1, x: 0, transition: { duration: 0.4 } },
-};
-
-const rightVariants = {
-	initial: { opacity: 0, x: 200 },
-	animate: { opacity: 1, x: 0, transition: { duration: 0.4 } },
-};
 
 const Work = () => {
 	return (
@@ -43,17 +32,17 @@ const Work = () => {
 
 const WhatWeDo = ({ imgURL, strokeColor, title, description }) => {
 	return (
-		<motion.div className={styles.whatWeDo} initial='initial' whileInView='animate' viewport={{ once: true }}>
-			<motion.div className={styles.whatWeDoImageContainer} variants={leftVariants}>
+		<div className={styles.whatWeDo}>
+			<div className={styles.whatWeDoImageContainer}>
 				<img src={imgURL} />
-			</motion.div>
-			<motion.div className={styles.whatWeDoTextContainer} variants={rightVariants}>
+			</div>
+			<div className={styles.whatWeDoTextContainer}>
 				<h3>
 					<SquigglyUnderline word={title} color={strokeColor} />
 				</h3>
 				<p>{description}</p>
-			</motion.div>
-		</motion.div>
+			</div>
+		</div>
 	);
 };
 

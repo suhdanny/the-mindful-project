@@ -92,13 +92,14 @@ a {
 .stroke-svg {
 	position: absolute;
 	left: 0px;
-	min-width: calc(100% + 0px + 2px);
+	min-width: calc(100% + 0px + 5px);
 }
 
 @media screen and (max-width: 1050px) {
 	:root {
 		--section-padding: 2rem 6rem;
 		--section-margin: 0 0 3rem;
+		--section-subheader-font-size: 20px;
 	}
 }
 
@@ -106,7 +107,6 @@ a {
 	:root {
 		--section-margin: 0 0 2rem;
 		--section-header-font-size: 30px;
-		--section-subheader-font-size: 20px;
 	}
 }
 

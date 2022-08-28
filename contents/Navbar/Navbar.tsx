@@ -6,30 +6,32 @@ import Menu from '../../components/Menu/Menu';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from '../../contexts/ThemeContext';
 import { motion } from 'framer-motion';
-
-const leftVariants = {
-	initial: { opacity: 0, x: -30 },
-	animate: { opacity: 1, x: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
-};
-
-const topVariants = {
-	initial: { opacity: 0, y: -30 },
-	animate: { opacity: 1, y: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
-};
-
-const rightVariants = {
-	initial: { opacity: 0, x: 30 },
-	animate: { opacity: 1, x: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
-};
+import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
 	const { theme, toggleTheme } = useTheme();
 	const [isDarkMode, setDarkMode] = useState<boolean>(theme === 'light' ? false : true);
+	// const isMobile = useMediaQuery('(max-width: 1050px)');
 
 	const toggleDarkMode = (checked: boolean) => {
 		setDarkMode(checked);
 		toggleTheme();
+	};
+
+	const leftVariants = {
+		initial: { opacity: 0, x: -30 },
+		animate: { opacity: 1, x: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
+	};
+
+	const topVariants = {
+		initial: { opacity: 0, y: -30 },
+		animate: { opacity: 1, y: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
+	};
+
+	const rightVariants = {
+		initial: { opacity: 0, x: 30 },
+		animate: { opacity: 1, x: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
 	};
 
 	useEffect(() => {
@@ -40,11 +42,7 @@ const Navbar = () => {
 		<div className={styles.navbar}>
 			<motion.div className={styles.navbarLinks} initial='initial' animate='animate'>
 				<motion.div className={styles.navbarLogo} variants={leftVariants}>
-					{theme === 'light' ? (
-						<Image src='/images/logo.png' alt='logo' height='75' width='75' />
-					) : (
-						<Image src='/images/logo-dark.png' alt='logo' height='75' width='75' />
-					)}
+					{theme === 'light' ? <img src='/images/logo.png' alt='logo' /> : <img src='/images/logo-dark.png' alt='logo' />}
 				</motion.div>
 				<motion.div className={styles.navbarLinksContainer} variants={topVariants}>
 					<Menu />
@@ -59,8 +57,10 @@ const Navbar = () => {
 						) : (
 							<RiCloseLine size={27} onClick={() => setToggleMenu(false)} color='white' />
 						)
+					) : theme === 'light' ? (
+						<RiMenu3Line size={27} onClick={() => setToggleMenu(true)} color='black' />
 					) : (
-						<RiMenu3Line size={27} onClick={() => setToggleMenu(true)} />
+						<RiMenu3Line size={27} onClick={() => setToggleMenu(true)} color='white' />
 					)}
 					{toggleMenu && (
 						<div className={`${styles.navbarMenuContainer} ${styles.scaleUpCenter}`}>
