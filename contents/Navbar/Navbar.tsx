@@ -6,32 +6,30 @@ import Menu from '../../components/Menu/Menu';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { useTheme } from '../../contexts/ThemeContext';
 import { motion } from 'framer-motion';
-import { useMediaQuery } from '../../hooks/useMediaQuery';
+
+const leftVariants = {
+	initial: { opacity: 0, x: -30 },
+	animate: { opacity: 1, x: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
+};
+
+const topVariants = {
+	initial: { opacity: 0, y: -30 },
+	animate: { opacity: 1, y: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
+};
+
+const rightVariants = {
+	initial: { opacity: 0, x: 30 },
+	animate: { opacity: 1, x: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
+};
 
 const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
 	const { theme, toggleTheme } = useTheme();
 	const [isDarkMode, setDarkMode] = useState<boolean>(theme === 'light' ? false : true);
-	// const isMobile = useMediaQuery('(max-width: 1050px)');
 
 	const toggleDarkMode = (checked: boolean) => {
 		setDarkMode(checked);
 		toggleTheme();
-	};
-
-	const leftVariants = {
-		initial: { opacity: 0, x: -30 },
-		animate: { opacity: 1, x: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
-	};
-
-	const topVariants = {
-		initial: { opacity: 0, y: -30 },
-		animate: { opacity: 1, y: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
-	};
-
-	const rightVariants = {
-		initial: { opacity: 0, x: 30 },
-		animate: { opacity: 1, x: 0, transition: { duration: 0.2, type: 'spring', stiffness: 200 } },
 	};
 
 	useEffect(() => {
