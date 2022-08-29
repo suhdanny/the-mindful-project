@@ -22,8 +22,8 @@
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
-	font-size: var(--section-subheader-font-size);
 	flex: 1;
+	font-size: var(--section-paragraph-font-size);
 }
 
 .contactForm input {
@@ -61,6 +61,7 @@
 
 .contactForm label {
 	font-family: inherit;
+	font-size: inherit;
 	margin-top: 1rem;
 	margin-bottom: 0.5rem;
 	color: var(--theme-text);
