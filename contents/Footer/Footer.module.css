@@ -37,3 +37,33 @@
 	font-size: 12px;
 	font-weight: 300;
 }
+
+@media screen and (max-width: 1050px) {
+	.footer {
+		padding: 3rem 6rem;
+	}
+
+	.footerLinks {
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.footerMenu {
+		min-width: 200px;
+	}
+
+	.footerLinks div:first-child {
+		text-align: center;
+	}
+
+	.footerLinks div:last-child {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.footerCopyRight {
+		text-align: center;
+	}
+}
