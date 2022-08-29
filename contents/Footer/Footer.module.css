@@ -38,6 +38,12 @@
 	font-weight: 300;
 }
 
+.mediaContainer {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+}
+
 @media screen and (max-width: 1050px) {
 	.footer {
 		padding: 3rem 6rem;
@@ -60,9 +66,7 @@
 	.footerLinks div:last-child {
 		text-align: center;
 	}
-}
 
-@media screen and (max-width: 1050px) {
 	.footerCopyRight {
 		text-align: center;
 	}
