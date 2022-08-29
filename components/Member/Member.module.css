@@ -25,13 +25,13 @@
 }
 
 .memberDetail p:first-child {
-	font-size: 18px;
+	font-size: var(--section-subheader-font-size);
 	font-weight: 600;
 	color: #3da470;
 }
 
 .memberDetail p:last-child {
 	font-weight: 400;
-	font-size: 15px;
+	font-size: var(--section-paragraph-font-size);
 	text-align: center;
 }

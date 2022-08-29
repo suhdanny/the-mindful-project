@@ -14,7 +14,7 @@
 .teamHeading h1 {
 	font-style: normal;
 	font-weight: 500;
-	font-size: 35px;
+	font-size: var(--section-header-font-size);
 	line-height: 75px;
 	color: var(--theme-text);
 }
@@ -24,4 +24,49 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 2rem;
+}
+
+.buttonContainer {
+	display: none;
+}
+
+.buttonContainer button {
+	font-family: inherit;
+	margin-top: 1rem;
+	padding: 1rem 3rem;
+	background-color: #3da470;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	color: white;
+	font-size: 16px;
+	outline: none;
+	border: none;
+}
+
+.buttonContainer button:focus {
+	outline: none;
+}
+
+@media screen and (max-width: 1050px) {
+	.team {
+		align-items: center;
+	}
+
+	.teamHeading h1 {
+		text-align: center;
+	}
+
+	.membersContainer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.membersContainer {
+		grid-template-columns: repeat(1, 200px);
+	}
+
+	.buttonContainer {
+		display: block;
+	}
 }
