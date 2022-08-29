@@ -7,7 +7,7 @@
 
 .contactHeader h1 {
 	font-weight: 500;
-	font-size: 35px;
+	font-size: var(--section-header-font-size);
 	line-height: 65px;
 	margin-bottom: 2rem;
 	color: var(--theme-text);
@@ -22,7 +22,7 @@
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
-	font-size: 16px;
+	font-size: var(--section-subheader-font-size);
 	flex: 1;
 }
 
@@ -119,4 +119,24 @@
 
 .googleMap {
 	height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+	.contactHeader h1 {
+		text-align: center;
+	}
+
+	.contactContent {
+		flex-direction: column;
+	}
+
+	.contactMap {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.buttonFront {
+		padding: 1rem;
+	}
 }
