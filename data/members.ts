@@ -11,6 +11,5 @@ export const members = [
 	{ name: 'Bianca Yuen', position: 'External Affairs Director', imgURL: '' },
 	{ name: 'Grace Deol', position: 'External Affairs Director', imgURL: '' },
 	{ name: 'Valeria Khudiakova', position: 'Inclusivity Research Director', imgURL: '' },
-	{ name: 'Porsha Taheri', position: 'Inclusivity Research Director', imgURL: '' },
 	{ name: 'Danny Suh', position: 'Web Developer & Administrator', imgURL: '' },
 ];
