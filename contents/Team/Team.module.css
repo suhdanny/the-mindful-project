@@ -3,6 +3,7 @@
 	margin: var(--section-margin);
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .teamHeading {
@@ -22,8 +23,8 @@
 .membersContainer {
 	flex: 1;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 2rem;
+	grid-template-columns: repeat(4, 200px);
+	gap: 4rem;
 }
 
 .buttonContainer {
@@ -45,6 +46,12 @@
 
 .buttonContainer button:focus {
 	outline: none;
+}
+
+@media screen and (max-width: 1350px) {
+	.membersContainer {
+		grid-template-columns: repeat(3, 200px);
+	}
 }
 
 @media screen and (max-width: 1050px) {

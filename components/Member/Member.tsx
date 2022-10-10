@@ -11,7 +11,7 @@ const Member = ({ imgURL, name, position }: MemberProps) => {
 	return (
 		<div className={styles.member}>
 			<div className={styles.memberImage}>
-				<img src='/images/avatar.png' alt='blog image' />
+				<img src={imgURL} alt='blog image' />
 			</div>
 			<div className={styles.memberDetail}>
 				<p>{name}</p>

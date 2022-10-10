@@ -13,9 +13,9 @@ const Team = () => {
 		const loadMemberElements = () => {
 			const newMemberElements = members.map((member, index) => {
 				if (!isMobile || loadMoreMembers) {
-					return <Member key={index} name={member.name} position={member.position} />;
+					return <Member key={index} name={member.name} position={member.position} imgURL={member.imgURL}/>;
 				} else {
-					return index < 3 ? <Member key={index} name={member.name} position={member.position} /> : null;
+					return index < 3 ? <Member key={index} name={member.name} position={member.position} imgURL={member.imgURL}/> : null;
 				}
 			});
 
